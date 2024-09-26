@@ -1,0 +1,169 @@
+
+## Navigate // Workspaces 1-10, A-Z, ... // <><Ctrl> 0..9, A..Z, ... ##
+## Modify // Carry Window to Workspace 1-10, A-Z, ... // <><Ctrl><Shift> 0..9, A..Z, ...  ##
+## Launch // Workspace Application A-Z, ... // <><Shift> A..Z, ...  ##
+
+bindsym $mod+Ctrl+1 workspace number 1 1
+bindsym $mod+Shift+Ctrl+1 move container to workspace number 1 1; workspace number 1
+
+bindsym $mod+Ctrl+2 workspace number 2 2
+bindsym $mod+Shift+Ctrl+2 move container to workspace number 2 2; workspace number 2
+
+bindsym $mod+Ctrl+3 workspace number 3 3
+bindsym $mod+Shift+Ctrl+3 move container to workspace number 3 3; workspace number 3
+
+bindsym $mod+Ctrl+4 workspace number 4 4
+bindsym $mod+Shift+Ctrl+4 move container to workspace number 4 4; workspace number 4
+
+bindsym $mod+Ctrl+5 workspace number 5 5
+bindsym $mod+Shift+Ctrl+5 move container to workspace number 5 5; workspace number 5
+
+bindsym $mod+Ctrl+6 workspace number 6 6
+bindsym $mod+Shift+Ctrl+6 move container to workspace number 6 6; workspace number 6
+
+bindsym $mod+Ctrl+7 workspace number 7 7
+bindsym $mod+Shift+Ctrl+7 move container to workspace number 7 7; workspace number 7
+
+bindsym $mod+Ctrl+8 workspace number 8 8
+bindsym $mod+Shift+Ctrl+8 move container to workspace number 8 8; workspace number 8
+
+bindsym $mod+Ctrl+9 workspace number 9 9
+bindsym $mod+Shift+Ctrl+9 move container to workspace number 9 9; workspace number 9
+
+bindsym $mod+Ctrl+0 workspace number 10 0
+bindsym $mod+Shift+Ctrl+0 move container to workspace number 10 0; workspace number 10
+
+assign [title=ActivityWatch] workspace number 11 A
+bindsym $mod+Ctrl+a workspace number 11 A; exec ~/bin/is_workspace_empty && gtk-launch activitywatch
+bindsym $mod+Shift+Ctrl+a move container to workspace number 11 A; workspace number 11
+
+bindsym $mod+Ctrl+b workspace number 12 B; exec ~/bin/is_workspace_empty && google-chrome
+bindsym $mod+Shift+Ctrl+b move container to workspace number 12 B; workspace number 12
+bindsym $mod+Shift+b exec google-chrome
+
+bindsym $mod+Ctrl+c workspace number 13 C; exec ~/bin/is_workspace_empty && gtk-launch mail
+bindsym $mod+Shift+Ctrl+c move container to workspace number 13 C; workspace number 13
+
+bindsym $mod+Ctrl+d workspace number 14 D; exec ~/bin/is_workspace_empty && code
+bindsym $mod+Shift+Ctrl+d move container to workspace number 14 D; workspace number 14
+bindsym $mod+Shift+d exec code
+
+bindsym $mod+Ctrl+e workspace number 15 E; exec ~/bin/is_workspace_empty && gtk-launch mail
+bindsym $mod+Shift+Ctrl+e move container to workspace number 15 E; workspace number 15
+
+bindsym $mod+Ctrl+f workspace number 16 F; exec ~/bin/is_workspace_empty && nautilus --new-window
+bindsym $mod+Shift+Ctrl+f move container to workspace number 16 F; workspace number 16
+bindsym $mod+Shift+f exec nautilus --new-window
+
+assign [title=ChatGPT] workspace number 17 G
+bindsym $mod+Ctrl+g workspace number 17 G; exec ~/bin/is_workspace_empty && gtk-launch chatgpt
+bindsym $mod+Shift+Ctrl+g move container to workspace number 17 G; workspace number 17
+
+bindsym $mod+Ctrl+h workspace number 18 H
+bindsym $mod+Shift+Ctrl+h move container to workspace number 18 H; workspace number 18
+
+assign [title=Perplexity] workspace number 19 I
+bindsym $mod+Ctrl+i workspace number 19 I; exec ~/bin/is_workspace_empty && gtk-launch perplexity
+bindsym $mod+Shift+Ctrl+i move container to workspace number 19 I; workspace number 19
+
+bindsym $mod+Ctrl+j workspace number 20 J
+bindsym $mod+Shift+Ctrl+j move container to workspace number 20 J; workspace number 20
+
+bindsym $mod+Ctrl+k workspace number 21 K
+bindsym $mod+Shift+Ctrl+k move container to workspace number 21 K; workspace number 21
+
+assign [class=Zotero] workspace number 22 L
+bindsym $mod+Ctrl+l workspace number 22 L; exec ~/bin/is_workspace_empty && gtk-launch zotero
+bindsym $mod+Shift+Ctrl+l move container to workspace number 22 L; workspace number 22
+
+assign [class=Element] workspace number 23 M
+bindsym $mod+Ctrl+m workspace number 23 M; exec ~/bin/is_workspace_empty && element-desktop
+bindsym $mod+Shift+Ctrl+m move container to workspace number 23 M; workspace number 23
+
+bindsym $mod+Ctrl+n workspace number 24 N
+bindsym $mod+Shift+Ctrl+n move container to workspace number 24 N; workspace number 24
+
+assign [instance=DesktopEditors] workspace number 25 O
+bindsym $mod+Ctrl+o workspace number 25 O; exec ~/bin/is_workspace_empty && onlyoffice-desktopeditors --single-window-app
+bindsym $mod+Shift+Ctrl+o move container to workspace number 25 O; workspace number 25
+
+assign [title=KeePassXC] workspace number 26 P
+bindsym $mod+Ctrl+p workspace number 26 P; exec ~/bin/is_workspace_empty && keepassxc
+bindsym $mod+Shift+Ctrl+p move container to workspace number 26 P; workspace number 26
+
+bindsym $mod+Ctrl+q workspace number 27 Q
+bindsym $mod+Shift+Ctrl+q move container to workspace number 27 Q; workspace number 27
+
+assign [title=Okular] workspace number 28 R
+bindsym $mod+Ctrl+r workspace number 28 R; exec ~/bin/is_workspace_empty && flatpak run org.kde.okular
+bindsym $mod+Shift+Ctrl+r move container to workspace number 28 R; workspace number 28
+
+bindsym $mod+Ctrl+s workspace number 29 S; exec ~/bin/is_workspace_empty && gnome-control-center
+bindsym $mod+Shift+Ctrl+s move container to workspace number 29 S; workspace number 29
+bindsym $mod+Shift+s exec gnome-control-center
+
+bindsym $mod+Ctrl+t workspace number 30 T; exec ~/bin/is_workspace_empty && gnome-terminal
+bindsym $mod+Shift+Ctrl+t move container to workspace number 30 T; workspace number 30
+bindsym $mod+Shift+t exec gnome-terminal
+
+bindsym $mod+Ctrl+u workspace number 31 U
+bindsym $mod+Shift+Ctrl+u move container to workspace number 31 U; workspace number 31
+
+bindsym $mod+Ctrl+v workspace number 32 V
+bindsym $mod+Shift+Ctrl+v move container to workspace number 32 V; workspace number 32
+
+assign [title="FreeRDP: ids-actros.fzi.de"] workspace number 33 W
+for_window [title="FreeRDP: ids-actros.fzi.de"] floating disable
+bindsym $mod+Ctrl+w workspace number 33 W; exec ~/bin/is_workspace_empty && gtk-launch windows
+bindsym $mod+Shift+Ctrl+w move container to workspace number 33 W; workspace number 33
+
+bindsym $mod+Ctrl+x workspace number 34 X; exec ~/bin/is_workspace_empty && gtk-launch vim
+bindsym $mod+Shift+Ctrl+x move container to workspace number 34 X; workspace number 34
+
+assign [title="YouTube Music"] workspace number 35 Y
+bindsym $mod+Ctrl+y workspace number 35 Y; exec ~/bin/is_workspace_empty && gtk-launch youtube-music
+bindsym $mod+Shift+Ctrl+y move container to workspace number 35 Y; workspace number 35
+
+assign [class="Foxglove Studio"] workspace number 36 Z
+bindsym $mod+Ctrl+z workspace number 36 Z; exec ~/bin/is_workspace_empty && foxglove-studio
+bindsym $mod+Shift+Ctrl+z move container to workspace number 36 Z; workspace number 36
+
+bindsym $mod+Ctrl+adiaeresis workspace number 37 Ä
+bindsym $mod+Shift+Ctrl+adiaeresis move container to workspace number 37 Ä; workspace number 37
+
+bindsym $mod+Ctrl+odiaeresis workspace number 38 Ö
+bindsym $mod+Shift+Ctrl+odiaeresis move container to workspace number 38 Ö; workspace number 38
+
+bindsym $mod+Ctrl+udiaeresis workspace number 39 Ü
+bindsym $mod+Shift+Ctrl+udiaeresis move container to workspace number 39 Ü; workspace number 39
+
+bindsym $mod+Ctrl+ssharp workspace number 40 ß
+bindsym $mod+Shift+Ctrl+ssharp move container to workspace number 40 ß; workspace number 40
+
+assign [title="Microsoft Teams"] workspace number 41 #
+assign [title="BBB BigBlueButton Webconf"] workspace number 41 #
+bindsym $mod+Ctrl+numbersign workspace number 41 #
+bindsym $mod+Shift+Ctrl+numbersign move container to workspace number 41 #; workspace number 41
+
+bindsym $mod+Ctrl+plus workspace number 42 +
+bindsym $mod+Shift+Ctrl+plus move container to workspace number 42 +; workspace number 42
+
+bindsym $mod+Ctrl+comma workspace number 43 ,
+bindsym $mod+Shift+Ctrl+comma move container to workspace number 43 ,; workspace number 43
+
+assign [title=longterm_timeline.xlsx] workspace number 44 -
+bindsym $mod+Ctrl+minus workspace number 44 -; exec ~/bin/is_workspace_empty && gtk-launch longterm_timeline
+bindsym $mod+Shift+Ctrl+minus move container to workspace number 44 -; workspace number 44
+
+bindsym $mod+Ctrl+period workspace number 45 .
+bindsym $mod+Shift+Ctrl+period move container to workspace number 45 .; workspace number 45
+
+bindsym $mod+Ctrl+less workspace number 46 <
+bindsym $mod+Shift+Ctrl+less move container to workspace number 46 <; workspace number 46
+
+assign [app_id=org.remmina.Remmina] workspace number 47 ^
+bindsym $mod+Ctrl+asciicircum workspace number 47 ^
+bindsym $mod+Shift+Ctrl+asciicircum move container to workspace number 47 ^; workspace number 47
+
+bindsym $mod+Ctrl+acute workspace number 48 ´
+bindsym $mod+Shift+Ctrl+acute move container to workspace number 48 ´; workspace number 48

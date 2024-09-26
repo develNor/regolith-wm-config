@@ -1,0 +1,20 @@
+########################################################################################
+# dunst
+########################################################################################
+
+## Notification // Close // <> m ##
+bindsym $mod+m exec --no-startup-id dunstctl close
+
+## Notification // Close all // <><Shift> m ##
+bindsym $mod+shift+m exec --no-startup-id dunstctl close-all
+
+## Notification // History // <> n ##
+bindsym $mod+n exec --no-startup-id dunstctl history-pop
+
+## Notification // Context // <> , ##
+# hint: ,=comma
+bindsym $mod+comma exec --no-startup-id dunstctl context
+
+## Notification // Action // <><Shift> ; ##
+# hint: ;=semicolon
+bindsym $mod+shift+semicolon exec --no-startup-id dunstctl action

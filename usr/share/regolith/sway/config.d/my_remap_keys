@@ -1,0 +1,28 @@
+########################################################################################
+# Remap Keys
+########################################################################################
+
+# Add Menu key to super-function
+## On the laptop keyboard a the second windows key is missing
+## this makes some i3 shortcuts very difficult
+## instead there is a Menu-key/Print-key which I never use
+## => Map the not needed key the non existing right super key
+
+# Development information
+# find keyboard identifier via: swaymsg -t get_inputs
+# check if curent config works via: wev or xev (both work)
+
+# Hint: It seems not to be possible to overwrite variables that already have been defined. E.g. if a variant is defined for "*", it can hardly be changed for any specific keyboard
+input * {
+    xkb_layout custom_keyboard_variants
+}
+
+# For standard/built-in laptop keyboard
+input "1:1:AT_Translated_Set_2_keyboard" {
+    # for tks-seat
+    xkb_variant remap_print_to_super_r
+
+    # for celsius
+    # remap menu to super_r
+    xkb_options altwin:menu_win 
+}

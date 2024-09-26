@@ -1,0 +1,23 @@
+
+# Monitors
+set $primary_monitors DP-2-2 HDMI-1
+set $secondary_monitors DP-2-3 DP-3
+set $laptop_monitor eDP-1
+
+# Floating Windows
+for_window [title="^Floating.*"] floating enable
+for_window [title="^Live Caption.*"] floating enable
+
+# Unused:
+#   Add AltGr Keybinds
+#   - Per regolith default AltGr has no keybindings
+#   - It is tricky to use some Commands with Alt involved because only the left hand can reach Alt
+#   => make it possible to reach "Alt" with right hand by adding analougus keybindings to AltGr
+#   AltGr (keysym ISO_Level3_Shift)
+#   set $altgr Mod5
+
+# Record Screen
+## Session // Screenrecording: Rectangle // <><Alt>. ##
+bindsym $mod+alt+period exec gtk-launch record_screen_rectangle
+## Session // Screenrecording: Monitor // <><Alt><Shift>. ##
+bindsym $mod+alt+shift+period exec gtk-launch record_screen_monitor

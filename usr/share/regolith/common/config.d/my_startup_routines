@@ -1,0 +1,13 @@
+########################################################################################
+# Startup routines
+########################################################################################
+
+# start activitywatch
+## This is in the i3 config because the usual gnome-autostart does not work when logging in and out without rebooting
+## The reason it doesnt work is because the system tray is missing on startup
+## So it is placed in the i3 config to assurethat the regolith system tray is build
+#exec --no-startup-id ~/bin/background_detached_exec activity ~/bin/activitywatch
+exec --no-startup-id ~/bin/background_detached_exec activity ~/inst/activitywatch/aw-qt
+
+# exec --no-startup-id ~/bin/background_detached_exec workstyle "workstyle &> /tmp/workstyle.log"
+exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec workstyle 'workstyle &> /tmp/workstyle.log'"
