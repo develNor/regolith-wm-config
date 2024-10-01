@@ -10,4 +10,6 @@
 exec --no-startup-id ~/bin/background_detached_exec activity ~/inst/activitywatch/aw-qt
 
 # exec --no-startup-id ~/bin/background_detached_exec workstyle "workstyle &> /tmp/workstyle.log"
-exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec workstyle 'workstyle &> /tmp/workstyle.log'"
+exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec icons workstyle"
+
+exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec gpu ~/bin/monitor_gpu.py"

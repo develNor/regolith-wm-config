@@ -121,7 +121,7 @@ bindsym $mod+Ctrl+x workspace number 34 X; exec ~/bin/is_workspace_empty && gtk-
 bindsym $mod+Shift+Ctrl+x move container to workspace number 34 X; workspace number 34
 
 assign [title="YouTube Music"] workspace number 35 Y
-bindsym $mod+Ctrl+y workspace number 35 Y; exec ~/bin/is_workspace_empty && gtk-launch youtube-music
+bindsym $mod+Ctrl+y workspace number 35 Y; exec ~/bin/is_workspace_empty && youtube-music-desktop-app
 bindsym $mod+Shift+Ctrl+y move container to workspace number 35 Y; workspace number 35
 
 assign [class="Foxglove Studio"] workspace number 36 Z
