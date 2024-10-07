@@ -7,9 +7,11 @@
 ## The reason it doesnt work is because the system tray is missing on startup
 ## So it is placed in the i3 config to assurethat the regolith system tray is build
 #exec --no-startup-id ~/bin/background_detached_exec activity ~/bin/activitywatch
-exec --no-startup-id ~/bin/background_detached_exec activity ~/inst/activitywatch/aw-qt
+exec --no-startup-id ~/bin/background_detached_exec aw ~/inst/activitywatch/aw-qt
 
 # exec --no-startup-id ~/bin/background_detached_exec workstyle "workstyle &> /tmp/workstyle.log"
 exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec icons workstyle"
 
 exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec gpu ~/bin/monitor_gpu.py"
+
+exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec ws-hist ~/bin/i3-workspace-history -sway"

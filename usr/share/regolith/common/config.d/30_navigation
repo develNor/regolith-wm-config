@@ -22,27 +22,27 @@ bindsym $mod+$wm.binding.down focus down
 bindsym $mod+$wm.binding.up focus up
 bindsym $mod+$wm.binding.right focus right
 
-## Navigate // Next Workspace // <> Tab ##
-set_from_resource $wm.binding.ws_next wm.binding.ws_next Tab
-bindsym $mod+$wm.binding.ws_next workspace next
+## Navigate // Next Workspace (by history) // <><Shift> Tab ##
+set_from_resource $wm.binding.ws_next wm.binding.ws_next Shift+Tab
+bindsym $mod+$wm.binding.ws_next exec ~/bin/i3-workspace-history -sway -mode=forward
 
-## Navigate // Next Workspace // <><Alt> → ##
+## Navigate // Next Workspace (by ws-number) // <><Alt> → ##
 set_from_resource $wm.binding.ws_next2 wm.binding.ws_next2 Right
 bindsym $mod+$alt+$wm.binding.ws_next2 workspace next
 
-## Navigate // Next Workspace on Output // <><Ctrl> Tab ##
+## Navigate // Workspace to the right on Output // <><Ctrl> Tab ##
 set_from_resource $wm.binding.ws_next_on_output wm.binding.ws_next_on_output Ctrl+Tab
 bindsym $mod+$wm.binding.ws_next_on_output workspace next_on_output
 
-## Navigate // Previous Workspace // <><Shift> Tab ##
-set_from_resource $wm.binding.ws_prev wm.binding.ws_prev Shift+Tab
-bindsym $mod+$wm.binding.ws_prev workspace prev
+## Navigate // Previous Workspace (by history) // <> Tab ##
+set_from_resource $wm.binding.ws_prev wm.binding.ws_prev Tab
+bindsym $mod+$wm.binding.ws_prev exec ~/bin/i3-workspace-history -sway -mode=back
 
-## Navigate // Previous Workspace // <><Alt> ← ##
+## Navigate // Previous Workspace (by ws-number) // <><Alt> ← ##
 set_from_resource $wm.binding.ws_prev2 wm.binding.ws_prev2 Left
 bindsym $mod+$alt+$wm.binding.ws_prev2 workspace prev
 
-## Navigate // Previous Workspace on Output // <><Ctrl><Shift> Tab ##
+## Navigate // Workspace to the left on Output // <><Ctrl><Shift> Tab ##
 set_from_resource $wm.binding.ws_prev_on_output wm.binding.ws_prev_on_output Ctrl+Shift+Tab
 bindsym $mod+$wm.binding.ws_prev_on_output workspace prev_on_output
 
