@@ -14,4 +14,4 @@ exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec icons 
 
 exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec gpu ~/bin/monitor_gpu.py"
 
-exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec ws-hist ~/bin/i3-workspace-history -sway"
+exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec ws-hist '~/bin/i3-workspace-history -sway'"
