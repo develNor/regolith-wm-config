@@ -15,6 +15,7 @@
 # Hint: It seems not to be possible to overwrite variables that already have been defined. E.g. if a variant is defined for "*", it can hardly be changed for any specific keyboard
 input * {
     xkb_layout custom_keyboard_variants
+    xkb_variant nodeadkeys
 }
 
 # For standard/built-in laptop keyboard
