@@ -19,6 +19,6 @@ set_from_resource $wm.binding.refresh wm.binding.refresh Shift+r
 set_from_resource $wm.program.refresh_ui wm.program.refresh_ui /usr/bin/regolith-look refresh
 bindsym $mod+$wm.binding.refresh exec --no-startup-id $wm.program.refresh_ui
 
-## Session // Restart WM // <><Ctrl> r ##
-set_from_resource $wm.binding.restart wm.binding.restart Ctrl+r
-bindsym $mod+$wm.binding.restart restart
+### Session // Restart WM // <><Ctrl> r ##
+#set_from_resource $wm.binding.restart wm.binding.restart Ctrl+r
+#bindsym $mod+$wm.binding.restart restart

@@ -162,7 +162,6 @@ bindsym $mod+Shift+Ctrl+period move container to workspace number 45 .; workspac
 bindsym $mod+Ctrl+less workspace number 46 <
 bindsym $mod+Shift+Ctrl+less move container to workspace number 46 <; workspace number 46
 
-assign [app_id=org.remmina.Remmina] workspace number 47 ^
 bindsym $mod+Ctrl+asciicircum workspace number 47 ^
 bindsym $mod+Shift+Ctrl+asciicircum move container to workspace number 47 ^; workspace number 47
 
