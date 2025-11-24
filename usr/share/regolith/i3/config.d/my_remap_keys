@@ -1,1 +1,1 @@
-exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec x11-keys '~/setup/general_ubuntu-setups/desktop-setup/config/regolith3/x11-keymap.sh'"
+exec --no-startup-id bash -c "sleep 0.5 && ~/bin/background_detached_exec x11-keys '~/setup/general_ubuntu-setups/desktop-setup/config/regolith3/x11/x11-keymap.sh'"
