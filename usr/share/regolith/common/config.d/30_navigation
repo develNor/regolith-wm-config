@@ -22,9 +22,11 @@ bindsym $mod+$wm.binding.down focus down
 bindsym $mod+$wm.binding.up focus up
 bindsym $mod+$wm.binding.right focus right
 
+set $i3_workspace_history_auto ~/setup/general_ubuntu-setups/desktop-setup/config/regolith3/i3-workspace-history-auto.sh
+
 ## Navigate // Next Workspace (by history) // <><Shift> Tab ##
 set_from_resource $wm.binding.ws_next wm.binding.ws_next Shift+Tab
-bindsym $mod+$wm.binding.ws_next exec ~/bin/i3-workspace-history -sway -mode=forward
+bindsym $mod+$wm.binding.ws_next exec $i3_workspace_history_auto -mode=forward
 
 ## Navigate // Next Workspace (by ws-number) // <><Alt> → ##
 set_from_resource $wm.binding.ws_next2 wm.binding.ws_next2 Right
@@ -36,7 +38,7 @@ bindsym $mod+$wm.binding.ws_next_on_output workspace next_on_output
 
 ## Navigate // Previous Workspace (by history) // <> Tab ##
 set_from_resource $wm.binding.ws_prev wm.binding.ws_prev Tab
-bindsym $mod+$wm.binding.ws_prev exec ~/bin/i3-workspace-history -sway -mode=back
+bindsym $mod+$wm.binding.ws_prev exec $i3_workspace_history_auto -mode=back
 
 ## Navigate // Previous Workspace (by ws-number) // <><Alt> ← ##
 set_from_resource $wm.binding.ws_prev2 wm.binding.ws_prev2 Left

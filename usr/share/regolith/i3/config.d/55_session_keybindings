@@ -17,8 +17,14 @@ bindsym $mod+$wm.binding.reload reload
 ## Session // Refresh Session // <><Shift> r ##
 set_from_resource $wm.binding.refresh wm.binding.refresh Shift+r
 set_from_resource $wm.program.refresh_ui wm.program.refresh_ui /usr/bin/regolith-look refresh
-bindsym $mod+$wm.binding.refresh exec --no-startup-id $wm.program.refresh_ui
+bindsym $mod+$wm.binding.refresh exec --no-startup-id \
+    sh -c "$wm.program.refresh_ui && ~/setup/general_ubuntu-setups/desktop-setup/config/regolith3/x11-keymap.sh"
 
 ### Session // Restart WM // <><Ctrl> r ##
 #set_from_resource $wm.binding.restart wm.binding.restart Ctrl+r
 #bindsym $mod+$wm.binding.restart restart
+
+## Session // Lock Screen // <> Escape ##
+set_from_resource $wm.binding.lock wm.binding.lock Escape
+set_from_resource $wm.program.lock_i3 wm.program.lock_i3 dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+bindsym $mod+$wm.binding.lock exec $wm.program.lock_i3

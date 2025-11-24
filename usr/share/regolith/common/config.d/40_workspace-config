@@ -29,10 +29,10 @@ bindsym $mod+$wm.binding.move_workspace_output_up move workspace to output up
 bindsym $mod+$wm.binding.move_workspace_output_down move workspace to output down
 
 ## Modify // Containing Workspace // <><Ctrl><Alt> k j h l ##
-set_from_resource $wm.binding.take_left wm.binding.take_left Ctrl+$alt+h
-set_from_resource $wm.binding.take_right wm.binding.take_right Ctrl+$alt+l
-set_from_resource $wm.binding.take_up wm.binding.take_up Ctrl+$alt+k
-set_from_resource $wm.binding.take_down wm.binding.take_down Ctrl+$alt+j
+set_from_resource $wm.binding.take_left wm.binding.take_left Ctrl+Mod1+h
+set_from_resource $wm.binding.take_right wm.binding.take_right Ctrl+Mod1+l
+set_from_resource $wm.binding.take_up wm.binding.take_up Ctrl+Mod1+k
+set_from_resource $wm.binding.take_down wm.binding.take_down Ctrl+Mod1+j
 bindsym $mod+$wm.binding.take_left move workspace to output left
 bindsym $mod+$wm.binding.take_down move workspace to output down
 bindsym $mod+$wm.binding.take_up move workspace to output up

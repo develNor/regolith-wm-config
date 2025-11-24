@@ -80,7 +80,8 @@ assign [class=Element] workspace number 23 M
 bindsym $mod+Ctrl+m workspace number 23 M; exec ~/bin/is_workspace_empty && element-desktop
 bindsym $mod+Shift+Ctrl+m move container to workspace number 23 M; workspace number 23
 
-bindsym $mod+Ctrl+n workspace number 24 N
+assign [class=obsidian] workspace number 24 N
+bindsym $mod+Ctrl+n workspace number 24 N; exec ~/bin/is_workspace_empty && obsidian
 bindsym $mod+Shift+Ctrl+n move container to workspace number 24 N; workspace number 24
 
 assign [instance=DesktopEditors] workspace number 25 O
@@ -118,7 +119,7 @@ for_window [title="FreeRDP: ids-actros.fzi.de"] floating disable
 bindsym $mod+Ctrl+w workspace number 33 W; exec ~/bin/is_workspace_empty && gtk-launch windows
 bindsym $mod+Shift+Ctrl+w move container to workspace number 33 W; workspace number 33
 
-bindsym $mod+Ctrl+x workspace number 34 X; exec ~/bin/is_workspace_empty && gtk-launch vim
+bindsym $mod+Ctrl+x workspace number 34 X; exec ~/bin/is_workspace_empty && gtk-launch nvim
 bindsym $mod+Shift+Ctrl+x move container to workspace number 34 X; workspace number 34
 
 assign [title="YouTube Music"] workspace number 35 Y
