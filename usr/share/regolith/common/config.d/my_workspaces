@@ -44,9 +44,8 @@ bindsym $mod+Shift+b exec google-chrome
 bindsym $mod+Ctrl+c workspace number 13 C; exec ~/bin/is_workspace_empty && gtk-launch mail
 bindsym $mod+Shift+Ctrl+c move container to workspace number 13 C; workspace number 13
 
-bindsym $mod+Ctrl+d workspace number 14 D; exec ~/bin/is_workspace_empty && code
+bindsym $mod+Ctrl+d workspace number 14 D
 bindsym $mod+Shift+Ctrl+d move container to workspace number 14 D; workspace number 14
-bindsym $mod+Shift+d exec code
 
 bindsym $mod+Ctrl+e workspace number 15 E; exec ~/bin/is_workspace_empty && gtk-launch mail
 bindsym $mod+Shift+Ctrl+e move container to workspace number 15 E; workspace number 15
@@ -111,6 +110,7 @@ bindsym $mod+Shift+t exec gnome-terminal
 bindsym $mod+Ctrl+u workspace number 31 U
 bindsym $mod+Shift+Ctrl+u move container to workspace number 31 U; workspace number 31
 
+assign [class=Zathura] workspace number 32 V
 bindsym $mod+Ctrl+v workspace number 32 V
 bindsym $mod+Shift+Ctrl+v move container to workspace number 32 V; workspace number 32
 
@@ -126,8 +126,8 @@ assign [title="YouTube Music"] workspace number 35 Y
 bindsym $mod+Ctrl+y workspace number 35 Y; exec ~/bin/is_workspace_empty && gtk-launch youtube-music
 bindsym $mod+Shift+Ctrl+y move container to workspace number 35 Y; workspace number 35
 
-assign [class="Foxglove Studio"] workspace number 36 Z
-bindsym $mod+Ctrl+z workspace number 36 Z; exec ~/bin/is_workspace_empty && foxglove-studio
+assign [class="Lichtblick"] workspace number 36 Z
+bindsym $mod+Ctrl+z workspace number 36 Z; exec ~/bin/is_workspace_empty && gtk-launch lichtblick_debug
 bindsym $mod+Shift+Ctrl+z move container to workspace number 36 Z; workspace number 36
 
 bindsym $mod+Ctrl+adiaeresis workspace number 37 Ä
@@ -143,8 +143,7 @@ bindsym $mod+Ctrl+ssharp workspace number 40 ß
 bindsym $mod+Shift+Ctrl+ssharp move container to workspace number 40 ß; workspace number 40
 
 assign [title="Microsoft Teams"] workspace number 41 #
-assign [title="BBB BigBlueButton Webconf"] workspace number 41 #
-bindsym $mod+Ctrl+numbersign workspace number 41 #
+bindsym $mod+Ctrl+numbersign workspace number 41 #; exec ~/bin/is_workspace_empty && gtk-launch ms_teams_fzi
 bindsym $mod+Shift+Ctrl+numbersign move container to workspace number 41 #; workspace number 41
 
 bindsym $mod+Ctrl+plus workspace number 42 +
@@ -153,8 +152,7 @@ bindsym $mod+Shift+Ctrl+plus move container to workspace number 42 +; workspace 
 bindsym $mod+Ctrl+comma workspace number 43 ,
 bindsym $mod+Shift+Ctrl+comma move container to workspace number 43 ,; workspace number 43
 
-assign [title=longterm_timeline.xlsx] workspace number 44 -
-bindsym $mod+Ctrl+minus workspace number 44 -; exec ~/bin/is_workspace_empty && gtk-launch longterm_timeline
+bindsym $mod+Ctrl+minus workspace number 44 -
 bindsym $mod+Shift+Ctrl+minus move container to workspace number 44 -; workspace number 44
 
 bindsym $mod+Ctrl+period workspace number 45 .
